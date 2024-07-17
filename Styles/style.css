@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+BE+VLG:wght@100..400&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  background-color: rgb(0%, 0%, 0%);
+  color: #fff;
+}
+.section-heading {
+  font-size: 45px;
+  font-weight: 900;
+  text-align: center;
+}
+p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+}
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.small-heading {
+  font-size: 25px;
+  font-weight: 800;
+}
+.wrap {
+  width: 85%;
+  margin: 0 auto;
+}
+.hide {
+  display: none !important;
+}
+img {
+  width: 100%;
+}
+.btn-primary {
+  background: #e6533c;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-weight: 500;
+  font-size: 16px;
+}
+.btn-secondary {
+  border: 2px solid #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+/* -- heading part - style --  */
+.header {
+  background: linear-gradient(rgb(17, 17, 17), rgba(119, 119, 119, 0));
+
+}
+.logo {
+  font-weight: 900;
+  font-size: 32px;
+  color: #e6533c;
+  font-style: italic;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+}
+.nav ul {
+  list-style: none;
+  text-transform: capitalize;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  padding: 5px;
+}
+
+.nav ul li {
+  padding: 10px 25px;
+  border-radius: 30px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+.nav ul li:hover {
+  font-weight: bold;
+  background: #e6533c;
+}
+.active {
+  font-weight: bold;
+  background: #e6533c;
+}
+.nav ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #ffff;
+}
+#menu {
+  display: none;
+  font-size: 25px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* ---- banner part -- style ---  */
+.banner-section {
+  display: flex;
+  align-items: center;
+  margin: 50px auto;
+}
+.banner {
+  flex: 1;
+}
+.banner h1 {
+  font-size: 3.7rem;
+  font-weight: 900;
+  max-width: 400px;
+}
+.text-style{
+  /* font-family: "Playwrite CU", cursive; */
+  font-family: "Playwrite BE VLG", cursive;
+  font-weight: 200;
+}
+.banner p {
+  max-width: 500px;
+  margin: 20px 0px;
+}
+.bannar-img {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.bannar-img img {
+  max-width: 450px;
+  max-height: 600px;
+}
+.button-wrap {
+  display: flex;
+  gap: 20px;
+}
+.left-text{
+  position: absolute;
+  bottom:10px;
+  left: 0;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.1);
+  padding:10px;
+  border-radius: 7px;
+  display: flex;
+  gap:20px;
+}
+
+.play-wrap{
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  background: #e6533c;
+  width: 35px;
+  height: 35px;
+}
+.play{
+  clip-path: polygon(0 25%, 0% 100%, 84% 58%);
+  background: #fff;
+  width: 15px;
+  height: 20px;
+  margin-top: 13%;
+  margin-left: 7%;
+}
+.right-text{
+  position:absolute;
+  right:0;
+  top:25%;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.1);
+  padding:10px;
+  border-radius: 7px;
+}
+.right-text h2{
+  font-size: 40px;
+  font-weight:900;
+}
+.right-text p,.left-text p{
+  margin: 0;;
+}
+/* -------- responsive style ------  */
+@media screen and (max-width: 576px) {
+  .nav ul {
+    display: none;
+  }
+  #menu {
+    display: block;
+  }
+  .banner-section {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .nav ul {
+    display: none;
+  }
+  #menu {
+    display: block;
+  }
+}
