@@ -323,6 +323,33 @@ td{
   display: flex;
   gap:15px
 }
+
+/* --- team part --  */
+.team-section{
+  margin:40px auto;
+}
+.teams{
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.1);
+  padding:10px;
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:20px;
+  margin-top: 30px;
+}
+.member{
+  position: relative;
+}
+.member img{
+  border-radius: 10px;
+  height: 330px;
+}
+.member-name{
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
 /* -------- responsive style ------  */
 @media screen and (max-width: 576px) {
   .nav ul {
@@ -331,7 +358,7 @@ td{
   #menu {
     display: block;
   }
-  .habits {
+  .habits,.teams {
     grid-template-columns: 1fr;
   }
   .run-section {
