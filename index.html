@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="Styles/style.css" />
   </head>
   <body>
-    <header class="header hide">
+    <header class="header">
       <!-- --- nav part --  -->
       <nav class="wrap nav">
         <div class="logo"><h2>Fitness</h2></div>
@@ -72,7 +72,7 @@
 
     <main>
       <!-- --habits section ---  -->
-      <section class="wrap margin habits-section hide">
+      <section class="wrap margin habits-section">
         <h2 class="section-heading">Change Your Habits</h2>
         <div class="center">
           <p class="text-center max-text">
@@ -109,7 +109,7 @@
       </section>
 
       <!-- -- run section --  -->
-      <section class="wrap margin run-section hide">
+      <section class="wrap margin run-section">
         <div class="run">
           <h2 class="section-heading text-left">
             Run an Extra <br />
@@ -129,7 +129,7 @@
       </section>
 
       <!-- training section  -->
-      <section class="wrap margin traning-section hide">
+      <section class="wrap margin traning-section">
         <h2 class="section-heading text-left">Trainings and Exercises</h2>
         <p class="max-text">
           We believe fitness should be accessible to everyone, everywhere,
@@ -137,41 +137,53 @@
         </p>
 
         <div class="tring-grid">
-          <div class="t-row">
-            <div class="t-content">
-              <h6></h6>
+          <div class="t-item" id="t-item1">
+            <img src="images/exercise1.jpg" alt="" />
+            <div class="t-content1">
+              <h5>Lag Works</h5>
+              <p></p>
             </div>
           </div>
-          <div class="t-row">
-            <div class="t-content">
-              <h6></h6>
+          <div class="t-item" id="t-item2">
+            <img src="images/exercise2.png" alt="" />
+            <div class="t-content2">
+              <h5>Push Up</h5>
+              <p></p>
             </div>
           </div>
-          <div class="t-row">
-            <div class="t-content">
-              <h6></h6>
+          <div class="t-item" id="t-item3">
+            <img src="images/exercise3.png" alt="" />
+            <div class="t-content3">
+              <h5>Leg Press: Workd the</h5>
+              <p>quadiceps and gluts</p>
             </div>
           </div>
-          <div class="t-row">
-            <div class="t-content">
-              <h6></h6>
+          <div class="t-item" id="t-item4">
+            <img src="images/exercise4.png" alt="" />
+            <div class="t-content4">
+              <h5>Sounder Work</h5>
+              <p>quadriceeps and glutes</p>
             </div>
           </div>
-          <div class="t-row">
-            <div class="t-content">
-              <h6></h6>
+          <div class="t-item" id="t-item5">
+            <img src="images/exercise5.jpg" alt="" />
+            <div class="t-content5">
+              <h5>Sit Down</h5>
+              <p></p>
             </div>
           </div>
-          <div class="t-row">
-            <div class="t-content">
-              <h6></h6>
+          <div class="t-item" id="t-item6">
+            <img src="images/exercise6.jpg" alt="" />
+            <div class="t-content6">
+              <h5>leg exercise</h5>
+              <p>leg</p>
             </div>
           </div>
         </div>
       </section>
 
       <!-- bmi calculato section  -->
-      <section class="bmi-section hide">
+      <section class="bmi-section">
         <div class="bmi-top">
           <div class="">
             <h2 class="section-heading text-left">BMI Calculator</h2>
@@ -198,7 +210,7 @@
                   <td>Below 18.5</td>
                 </tr>
                 <tr>
-                  <td> 18.5 - 24.9</td>
+                  <td>18.5 - 24.9</td>
                   <td>Healthy</td>
                 </tr>
                 <tr>
@@ -214,65 +226,118 @@
           </div>
           <div class="bmi-right">
             <h3 class="mediaum-heading">Calculate your BMI</h3>
-            <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. </p>
+            <p>
+              We believe fitness should be accessible to everyone, everywhere,
+              regardless of income or access to a gym.
+            </p>
             <form action="">
               <div class="f-row">
-                <input type="number" name="height" id="height" placeholder="Height/cm">
-                <input type="number" name="Weight" id="Weight" placeholder="Weight/kg">
+                <input
+                  type="number"
+                  name="height"
+                  id="height"
+                  placeholder="Height/cm"
+                />
+                <input
+                  type="number"
+                  name="Weight"
+                  id="Weight"
+                  placeholder="Weight/kg"
+                />
               </div>
               <div class="f-row">
-                <input type="number" name="age" id="age" placeholder="Age">
+                <input type="number" name="age" id="age" placeholder="Age" />
                 <select name="sex" id="sex" aria-placeholder="Sex">
-                  <option value="" disabled selected> Sex</option>
+                  <option value="" disabled selected>Sex</option>
                   <option value="male">Male</option>
                   <option value="female">Female</option>
                 </select>
               </div>
               <div class="f-row">
                 <select name="fact" id="fact">
-                  <option value="" disabled selected> Select an activity</option>
+                  <option value="" disabled selected>Select an activity</option>
                 </select>
               </div>
-              <button type="submit" class="btn-primary">Calcutate     </button>
+              <button type="submit" class="btn-primary">Calcutate</button>
             </form>
           </div>
         </div>
       </section>
 
       <!-- -- team section--  -->
-       <section class="wrap marign team-section">
+      <section class="wrap marign team-section">
         <h2 class="section-heading">Meet Our Team</h2>
         <div class="center">
-          <p class="max-text text-center">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+          <p class="max-text text-center">
+            We believe fitness should be accessible to everyone, everywhere,
+            regardless of income or access to a gym.
+          </p>
         </div>
 
         <div class="teams">
           <div class="member">
-            <img src="images/trainer1.png" alt="">
+            <img src="images/trainer1.png" alt="" />
             <h4 class="member-name">Jerome Bell</h4>
           </div>
           <div class="member">
-            <img src="images/trainer2.png" alt="">
+            <img src="images/trainer2.png" alt="" />
             <h4 class="member-name">Cameron Williamson</h4>
           </div>
           <div class="member">
-            <img src="images/trainer3.png" alt="">
+            <img src="images/trainer3.png" alt="" />
             <h4 class="member-name">Darrell Steward</h4>
           </div>
           <div class="member">
-            <img src="images/trainer4.png" alt="">
+            <img src="images/trainer4.png" alt="" />
             <h4 class="member-name">Dianne Russell</h4>
           </div>
           <div class="member">
-            <img src="images/trainer5.png" alt="">
+            <img src="images/trainer5.png" alt="" />
             <h4 class="member-name">Cody Fisher</h4>
           </div>
           <div class="member">
-            <img src="images/trainer6.png" alt="">
+            <img src="images/trainer6.png" alt="" />
             <h4 class="member-name">Theresa Webb</h4>
           </div>
         </div>
-       </section>
+      </section>
     </main>
+
+    <footer class="footer">
+      <div class="footer-content wrap">
+        <div class="footer-left">
+          <h1 class="logo">Fitness</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis modi
+            fuga praesentium iusto ab sint facere officia saepe eaque, molestias
+            perferendis minus inventore adipisci voluptate facilis dolorem
+            repellat sit similique.
+          </p>
+        </div>
+        <div class="footer-right">
+          <div class="f-row">
+            <h3 class="mediaum-heading">Get Started</h3>
+            <ul>
+              <li>Service</li>
+              <li>Contact Us</li>
+              <li>Affilite Program</li>
+              <li>About Us</li>
+            </ul>
+          </div>
+          <div class="f-row">
+            <h3 class="mediaum-heading">Get Started</h3>
+            <ul>
+              <li>Fitenss</li>
+              <li>Platfrm</li>
+              <li>Workout Libary</li>
+              <li>App Design</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom wrap">
+        <p>All right reserved @Fitness 2024</p>
+      </div>
+    </footer>
   </body>
 </html>
