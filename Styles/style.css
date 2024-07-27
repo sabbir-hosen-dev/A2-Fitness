@@ -562,6 +562,9 @@ footer{
   #t-item3,#t-item6{
     display: none;
   }
+  .semple h2{
+    font-size:2rem;
+  }
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
