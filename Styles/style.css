@@ -37,7 +37,7 @@ p {
 }
 .wrap {
   width: 85%;
-  margin: 0 auto;
+  margin: 30px auto;
 }
 .margin {
   margin-top: 50px;
@@ -56,13 +56,27 @@ img {
   font-weight: bold;
   font-size: 16px;
   color: #fff;
+  cursor: pointer;
+  transition: .3s ease;
+}
+.btn-primary:hover , .btn-secondary:hover{
+  opacity: 90%;
 }
 .btn-secondary {
   border: 2px solid #fff;
   padding: 10px 20px;
   border-radius: 20px;
   font-weight: 500;
+  cursor: pointer;
+  transition: .3s ease;
 }
+.smple-btn{
+  background: transparent;
+  color:#fff;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
 /* -- heading part - style --  */
 .header {
   background: linear-gradient(to bottom, #0e0e0e 0%, #434343 100%);
@@ -197,6 +211,9 @@ img {
 }
 
 /* ---- habits -- section  */
+.habits-section{
+  margin:80px auto;
+}
 .center {
   display: flex;
   justify-content: center;
@@ -254,6 +271,9 @@ img {
 }
 
 /* Traning section  */
+.traning-section{
+  margin:80px auto;
+}
 .tring-grid{
   display: grid;
   grid-template-columns: repeat(16, 1fr);
@@ -261,7 +281,7 @@ img {
   margin-top: 30px;
 }
 .t-item{
-  max-height: 200px;
+  max-height: 260px;
   position: relative;
 }
 .t-item img{
@@ -389,7 +409,7 @@ td{
 
 /* --- team part --  */
 .team-section{
-  margin:40px auto;
+  margin:70px auto;
 }
 .teams{
   backdrop-filter: blur(20px);
@@ -416,6 +436,59 @@ td{
   left: 10px;
 }
 
+/* --- class es section style --  */
+.classes{
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.class{
+  flex:1 1 250px;
+  max-width: 350px;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.1);
+  padding:10px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: .3s ease;
+}
+.class:hover{
+  box-shadow: 1px 2px 14px #434343;
+}
+.class-img-wrap img{
+  border-radius: 5px;
+  margin-bottom: 5px;
+  max-height: 280px;
+}
+
+.class a {
+  margin:10px 0px;
+  display: inline-block;
+  color:#b5b2b2
+}
+.booknow-btn-wrap{
+  display: flex;
+  justify-content: center;
+  margin:40px;
+}
+.semple{
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.1);
+  padding:80px 0px;
+}
+.semple h2{
+  font-weight: 500;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.smple-wrap{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
 /* --- footer part style --  */
 footer{
   background: #131313;
